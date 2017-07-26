@@ -1,0 +1,17 @@
+<button class="ui negative button" (click)="goBack()"> Go Back</button>
+<div class="ui container">
+  <div class="ui content">
+    <ul *ngFor="let eachTrack of tracks; let idx=index" style="list-style: none">
+      <li>
+        <div>{{idx}}: {{eachTrack.name}}
+          <div>
+            <audio controls src="{{eachTrack.preview_url}}">
+            <!--<source src="{{eachTrack.preview_url}}">-->
+          </audio>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+</div>

@@ -1,0 +1,26 @@
+<div class="ui container">
+  <div class="ui content">
+    <div class="ui input">
+      <input type="text"
+             #searchInput (keydown.enter)="submit(searchInput.value)">
+      <button class="ui primary button"
+              (click)="submit(searchInput.value)">Search</button>
+    </div>
+  </div>
+</div>
+
+<div class="" *ngIf="results">
+  <div *ngIf="!results.length">No results found with term </div>
+  <div class=" flex-row">
+    <div class="  flex-item "
+    *ngFor="let artist of results">
+      <div [routerLink] = "['/artists', artist.id]" style="cursor: pointer">
+        <img *ngIf="(artist.images.length > 2)" src='{{artist.images[1].url}}' alt="">
+      </div>
+      <div class="ui container">
+        <h2><a [routerLink]="['/artists', artist.id]">{{artist.name}}</a></h2>
+      </div>
+    </div>
+  </div>
+</div>
+
