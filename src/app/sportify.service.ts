@@ -4,10 +4,10 @@ import { Observable } from 'rxjs/Observable';
 import 'rxjs/Rx';
 
 // generate additional token (valid 30 min) from here: https://developer.spotify.com/web-api/console/get-search-item/
-export const SPOTIFY_TOKEN = 'BQDegBSBonYADxoUFo1tmtF7gLN6lt8YsyyNxiI9ywiqhTAdCskFvzd8_e6YWm9ael2-GDPXeZU0ExzPjFB2qNwo' +
-  'v0eLBIVWy6IqX_pZ40t_slsadw88921igGDlfJLJ4cHTEX17G4j0uNVNh-PkV7SL9upYZAty-1y1CZZbGubXPCIn0vik8z0jIluzfp869A_vDLDoLIS' +
-  'l6DGs3jUKVO5HqPjFfzJGR3DpJcwa2R-dH4R3kxOR7ExiGVzyoGuTUbbzIRA43cIiYa44ofJEAlOp-98uNJ8sNSjDNPogICz9jSlAJdg_VJ5L6VWt1h' +
-  '7cSlJYb9Th081FeikqumZDmg';
+export const SPOTIFY_TOKEN = 'BQDCEdwH4N1DuO5JTaXxVWG8jSBvlB54Kr-sz2nZ-JS95qnQbPXVQXekGZ2aNpWDPPgO1Eo2yrEuZ1t_6NjYekdJ' +
+  'Z6mD97IDONb0zUv7W42HnLiBTb6wBkEkb2fCYxq1VdestWUHD9UNDO5xBSkd5DDM24DKyyVFXM3aVbzvPHvQ7G1HSvRVrJXWkcLMRSX1AwFmC8mG-xR' +
+  '4hiSzP7-iulALONn8LvdVRNTb0IHy7FpGJijfd_sAlPbi22C1fuDbI7TnmQnAzb_HB-xVdROWLBfMpPM21hgHlAOgdQnRbBSryfX14yN24djnjCEJr_' +
+  '7xip2GfgF-Nu08HZpiKn_wBg';
 
 // export const
 
