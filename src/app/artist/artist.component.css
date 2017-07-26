@@ -1,0 +1,11 @@
+.artist {
+  border: 1px solid transparent;
+  border-radius: 5px;
+  transition: 0.3s all ease-in-out;
+}
+
+.artist:hover {
+  border: 1px solid darkgray;
+  box-shadow: 4px 4px 3px lightgray;
+}
+

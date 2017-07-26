@@ -1,0 +1,21 @@
+<button class="ui negative button" (click)="goBack()">Go Back</button>
+
+<div class="flex-row">
+  <div class="flex-item " *ngFor="let eachAlbum of albums">
+    <div class="">
+      <div *ngIf="eachAlbum.images.length">
+        <img [routerLink]="['/tracks', eachAlbum.uri.split(':')[2]]" src="{{eachAlbum.images[0].url}}" alt="" style="cursor: pointer">
+      </div>
+
+      <div class="ui message">
+        <h3>{{eachAlbum.type}}: <span><a [routerLink]="['/tracks', eachAlbum.uri.split(':')[2]]">{{eachAlbum.name}}</a></span>
+        </h3>
+        <!--Available Markets:-->
+        <div *ngIf="eachAlbum.available_markets" class="">
+          <!--<span *ngFor="let eachMarket of eachAlbum.available_markets" >{{eachMarket}}|</span>-->
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

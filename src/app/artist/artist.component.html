@@ -1,0 +1,18 @@
+
+<!--<div class="ui message floating">-->
+  <!--{{artist | json}}-->
+<!--</div>-->
+<button class="ui negative button" (click)="goBack()">Go Back</button>
+
+
+
+<div class="ui container" *ngIf="artist">
+  <div>
+    <h1><a [routerLink]="['/albums', artist.id]">{{artist.name}}</a></h1>
+    <h4>Followers: <span style="color: red;">{{artist.followers.total}}</span></h4>
+  </div>
+  <div class="ui avatar">
+    <img class='artist' [routerLink]="['/albums', artist.id]" [src]=artist.images[0].url alt="" style="cursor: pointer;">
+  </div>
+
+</div>
